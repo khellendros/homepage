@@ -10,14 +10,24 @@
         <div class="container">
             <nav>
                 <ul class="nav nav-pills nav-fill">
-                    <li role="presentation" class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li role="presentation" class="nav-item"><a class="nav-link" href="api.html">API</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link active" href="api.html">API</a></li>
                     <li role="presentation" class="nav-item"><a class="nav-link" href="uidesign.html">UI Design</a></li>
                     <li role="presentation" class="nav-item"><a class="nav-link" href="usecase.html">Use Case</a></li>
                 </ul>
             </nav>
             <br />
-            <h1>API</h1>
+            <div class="card-header"><h1>API</h1></div>
+            <div class="card-body">
+                <p>Enumeration can begin with a simple request to the API endpoint with just the host address 
+                    using default scan options that can be configured via the web app.</p>
+                
+                <p>Example Usage:
+                <code>curl http://localhost/enumeration?ip=10.10.10.110</code></p>
+                <p>Alternatively, scans can be customized by adding url parameters.</p>
+                <p>Example Usage:
+                <code>curl http://localhost/enumeration?ip=10.10.10.110&scans=nmap,dir,vhost</code></p>
+            </div>
         </div>
     </body>
 </html>

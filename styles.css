@@ -1,4 +1,23 @@
 h1
 {
     text-align: center;
+    font-size: 26px;
+    color: rgba(35, 139, 224, 0.966);
+}
+
+h2
+{
+    text-align: center;
+    font-size: 24px;
+    color: rgba(35, 139, 224, 0.966);
+}
+
+p
+{
+    font-size: large;
+}
+
+textarea
+{
+    border: 1px solid rgba(35, 139, 224, 0.966);
 }

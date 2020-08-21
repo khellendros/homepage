@@ -10,14 +10,39 @@
         <div class="container">
             <nav>
                 <ul class="nav nav-pills nav-fill">
-                    <li role="presentation" class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li role="presentation" class="nav-item"><a class="nav-link" href="api.html">API</a></li>
-                    <li role="presentation" class="nav-item"><a class="nav-link" href="uidesign.html">UI Design</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link active" href="uidesign.html">UI Design</a></li>
                     <li role="presentation" class="nav-item"><a class="nav-link" href="usecase.html">Use Case</a></li>
                 </ul>
             </nav>
             <br />
-            <h1>UI Design</h1>
+            <div class="card-header"><h1>User Interface Design</h1></div>
+            <div class="card-body">
+                <p>Along with API endpoints, the web interface will also provide configuration, scanning, and log access features.
+                    Below are some design concepts.
+                </p>
+            </div>
+            <div class="card-header"><h2>Scanning / Enumeration</h2></h1></div>
+            <div class="card-body">
+                <form>
+                    Hosts:
+                    <br />
+                    <textarea rows="6" cols="75">192.168.1.2,192.168.1.3,192.168.1.4</textarea>
+                    <br /><br />
+                    Scan Type:
+                    <br />
+                    <input type="checkbox" id="network" name="network" value="true">
+                    <label for="network">network</label><br />
+                    <input type="checkbox" id="vhost" name="vhost" value="true">
+                    <label for="vhost">vhost</label><br />
+                    <input type="checkbox" id="dir" name="dir" value="true">
+                    <label for="dir">dir</label><br />
+                    <input type="checkbox" id="vuln" name="vuln" value="true">
+                    <label for="vuln">vulnerabilities</label><br />
+                    <input type="submit" value="START!">
+                </form>
+            </div>
         </div>
     </body>
 </html>
