@@ -12,12 +12,27 @@ h2
     color: rgba(35, 139, 224, 0.966);
 }
 
+h3
+{
+    font-size: medium;
+    color: rgba(35, 139, 224, 0.966);
+}
 p
 {
     font-size: large;
 }
 
 textarea
+{
+    border: 1px solid rgba(35, 139, 224, 0.966);
+}
+
+.bluebg
+{
+    background-color: rgba(8, 251, 158, 0.267)
+}
+
+.ui-card, .ui-header
 {
     border: 1px solid rgba(35, 139, 224, 0.966);
 }

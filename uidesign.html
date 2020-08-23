@@ -23,8 +23,9 @@
                     Below are some design concepts.
                 </p>
             </div>
-            <div class="card-header"><h2>Scanning / Enumeration</h2></h1></div>
-            <div class="card-body">
+            <br />
+            <div class="card-header ui-header"><h2>Scanning / Enumeration</h2></h1></div>
+            <div class="card-body ui-card">
                 <form>
                     Hosts:
                     <br />
@@ -38,11 +39,43 @@
                     <label for="vhost">vhost</label><br />
                     <input type="checkbox" id="dir" name="dir" value="true">
                     <label for="dir">dir</label><br />
-                    <input type="checkbox" id="vuln" name="vuln" value="true">
-                    <label for="vuln">vulnerabilities</label><br />
                     <input type="submit" value="START!">
                 </form>
             </div>
+            <br />
+            <div class="card-header ui-header"><h2>Logs</h2></h1></div>
+            <div class="card-body ui-card">
+                <ul class="list-group">
+                    <li class="list-group-item bluebg"><a href="#">192.168.1.1</a></li>
+                    <li class="list-group-item bluebg"><a href="#">192.168.1.2</a></li>
+                    <li class="list-group-item bluebg"><a href="#">192.168.1.3</a></li>
+                    <li class="list-group-item bluebg"><a href="#">192.168.1.4</a></li>
+                </ul>
+            </div>
+            <br />
+            <div class="card-header ui-header"><h2>Configuration</h2></h1></div>
+            <div class="card-body ui-card">
+                <form>
+                    <h3>nmap</h3>
+                    <input type="checkbox" id="synscan" name="synscan" value="true">
+                    <label for="synscan">Syn Scan</label><br />
+                    Protocol:
+                    <input type="radio" id="tcp" name="protocol" value="tcp">
+                    <label for="tcp">TCP</label>
+                    <input type="radio" id="tcpudp" name="protocol" value="tcpudp">
+                    <label for="tcpudp">TCP & UDP</label><br>
+                    Port Range: <input type="text" value="0">&nbsp;to&nbsp;<input type="text" value="65535">
+                    <br /><br />
+                    <h3>gobuster</h3>
+                    Vhost Wordlists:
+                    <input type="text" value="dns-list.txt,someotherlist.txt">
+                    <br />
+                    Dir Wordlists:
+                    <input type="text" value="directories-large.txt,otherlist.txt">
+                </form>
+            </div>
         </div>
+        <br />
+        <br />
     </body>
 </html>
